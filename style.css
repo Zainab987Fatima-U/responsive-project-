@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #F2F0EA; /* Moonlit Grey from PDF */
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #A5956F; /* Mocha Mousse */
+}
+
+header {
+  background: #A0D4E0; /* Ethereal Blue */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.destinations h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.about, .contact {
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Desktop responsive - Mobile first approach */
+@media (min-width: 768px) {
+  nav a {
+    margin: 0 20px;
+  }
+  
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Pehle wala CSS same rahe ga */
+
+.btn {
+  background: #A5956F; /* Mocha Mousse */
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8a7d5f;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #A0D4E0; /* Ethereal Blue */
+  margin: 1rem 0;
+}
+
+.highlight {
+  border: 3px solid #A0D4E0;
+  transform: scale(1.05);
+}
